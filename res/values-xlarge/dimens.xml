@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="titlebar">70dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+    <dimen name="layout_margin_profile">10dp</dimen>
+    <dimen name="layout_margin_create_campaign">10dp</dimen>
+    <dimen name="browse_padding">5dp</dimen>
+    <dimen name="browse_campaign_lyt_margin">2dp</dimen>
+    <dimen name="img_margin">5dp</dimen>
+    <dimen name="txtInputLogin">40dp</dimen>
+    <dimen name="txtMaxHieght">120dp</dimen>
+    <dimen name="layout_margin_6">6dp</dimen>
+    <dimen name="layout_margin_10">10dp</dimen>
+    <dimen name="layout_margin_login">15dp</dimen>
+    <dimen name="layout_margin_map">50dp</dimen>
+    
+    <dimen name="imgPhotoHeight">300dp</dimen>
+     <dimen name="lbl_txt_size">20sp</dimen>
+    <dimen name="frm_width">153dp</dimen>
+    <dimen name="frm_height">64dp</dimen>
+</resources>

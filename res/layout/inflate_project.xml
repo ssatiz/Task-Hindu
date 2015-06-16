@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblProjectName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"/>
+     <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey" />
+
+</LinearLayout>

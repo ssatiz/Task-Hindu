@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Hindu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading</string>
+    
+	<string name="lst_view">ListView</string>    
+    <string name="map_view">MapView</string>
+    <string name="property_info">Property Info</string>
+    <string name="builder_info">Builders Info</string>
+    
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="max_area">MaxArea</string>
+    <string name="max_price">MaxPrice</string>
+    <string name="max_pricepersqft">MaxPricePerSqft</string>
+    <string name="min_area">MinArea</string>
+    <string name="min_price">MinPrice</string>
+    <string name="min_pricepersqft">MinPricePerSqft</string>
+    
+    <string name="amenities">Amenities</string>
+    <string name="other_amenities">Other Amenities</string>
+    <string name="specification">Specification</string>
+    
+    <string name="builder_name">Builder\'s Name</string>
+    <string name="builder_desc">Builder\'s Description</string>
+    <string name="builder_url">Builder\'s URL</string>
+    
+    <string name="apartment">Property Type: Apartment</string>
+    <string name="bedroom">Bed Room</string>
+    <string name="building_status">Building Status</string>
+    <string name="water_type">Water Type</string>
+    <string name="electricity">Electricity Connection</string>
+    
+        <string name="approved">Approved By </string> 
+         <string name="bankapp">Bank Approvals</string>  
+    
+    
+    <string name="INTERNET_PROBLEM">Unable to connect the internet at this time. Please try again some time later.</string>
+    
+    
+    
+    
+        
+</resources>

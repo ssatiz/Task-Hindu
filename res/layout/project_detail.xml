@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" >
+    </android.support.v4.view.ViewPager>
+
+    <com.example.customview.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+         android:padding="5dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblDescriptiontxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/lblAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblAddresstxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:id="@+id/tabla_cuerpo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TableRow
+                        android:id="@+id/tblMax"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblMaxArea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="@string/max_area"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMaxPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="@string/max_price"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMaxPricePSqft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="@string/max_pricepersqft"
+                            android:textColor="@android:color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblMaxAreaValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMaxPriceValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMaxSqftValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tblMin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblMinArea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="@string/min_area"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMinPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="@string/min_price"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMinPricePSqft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:padding="5dp"
+                            android:text="@string/min_pricepersqft"
+                            android:textColor="@android:color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblMinAreaValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMinPriceValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/lblMinSqftValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black" />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amenities"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblAmenities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_amenities"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblOtherAmenities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/specification"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblSpecification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnProperty"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/btnBlue"
+            android:text="@string/property_info"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBuilder"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/btnBlue"
+            android:text="@string/builder_info"
+            android:textColor="@android:color/white"
+             android:textStyle="bold"  />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollProperty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/lnrPropertyInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apartment"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tabla"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp" 
+                android:layout_marginBottom="10dp" >
+
+                <TableRow
+                    android:id="@+id/tblBMax"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/lblBMaxArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="@string/max_area"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/lblBMaxPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="@string/max_price"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/lblBMaxPricePSqft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="@string/max_pricepersqft"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowB2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/lblBMaxAreaValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/lblBMaxPriceValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/lblBMaxSqftValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black" />
+                </TableRow>
+            </TableLayout>
+			<LinearLayout 
+			    android:id="@+id/lnrInflateBed"
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+			    android:orientation="vertical">
+             </LinearLayout>
+             
+			<TextView
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/building_status"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+			<TextView
+			    android:id="@+id/lblBuildingStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:gravity="center" />
+			<TextView
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/approved"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+			<TextView
+			    android:id="@+id/lblApproved"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:gravity="center" />
+			<TextView
+			     android:id="@+id/lblBanktxt"			    
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bankapp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+			<TextView
+			    android:id="@+id/lblBank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:gravity="center" />
+			
+			<TextView
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/electricity"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+			<TextView
+			    android:id="@+id/lblElectricity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:textStyle="bold" 
+                 android:gravity="center"/>
+			
+			<TextView
+			    android:id="@+id/lblWatertxt"
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/water_type"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+			<TextView
+			    android:id="@+id/lblWater"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:gravity="center" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollBuilder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/lnrBuilderInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblBuilderName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/builder_desc"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblBuilderDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/builder_url"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblBuilderUrl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

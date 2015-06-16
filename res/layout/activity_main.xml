@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+         <TextView
+            android:id="@+id/lblListView"
+            style="@style/tap_bg"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/white_tapleft_bg"
+            android:gravity="center"
+            android:text="@string/lst_view"
+            android:textColor="@color/crowdfund_label" />
+
+        <TextView
+            android:id="@+id/lblMapView"
+            style="@style/tap_bg"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/blue_tapright_bg"
+            android:gravity="center"
+            android:text="@string/map_view"
+            android:textColor="@color/white" />
+       <!-- 
+        <TextView
+            android:id="@+id/lblListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/layout_margin"
+            android:text="@string/lst_view"
+            android:textColor="@color/tab_text"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lblMapView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/app_bg"
+            android:gravity="center"
+            android:padding="@dimen/layout_margin"
+            android:text="@string/map_view"
+            android:textColor="@color/tab_text" 
+            android:visibility="gone"/> -->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstProjectName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+      <LinearLayout
+        android:id="@+id/lnrMap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+		    <fragment
+		            android:id="@+id/map"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"		            
+		            class="com.google.android.gms.maps.SupportMapFragment" 
+		            
+		             />
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/lblNoRecords"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/browse_padding"
+        android:gravity="center"
+        android:paddingBottom="@dimen/layout_margin"
+        android:paddingTop="@dimen/layout_margin"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="header">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    
+     <style name="headertxt">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+     <style name="tap_bg">
+        <item name="android:layout_height">38dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

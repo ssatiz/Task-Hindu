@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_name_color">#bed62f</color>
+    <color name="forgotpass">#0070a1</color>
+    <color name="lblLike">#939597</color>
+    <color name="lblLiked">#0071a2</color>
+    <color name="postTime">#939597</color>
+    <color name="lblCounts">#939597</color>
+    <color name="blue">#0071a2</color>
+    <color name="seperator">#D3D3D3</color>
+    <color name="red">#D6402C</color>
+    <color name="tab_normal">#6C6C6C</color>
+    <color name="transpernt_blue">#0071a2</color>
+    <color name="green">#bed62f</color>
+    <color name="grey">#939597</color>
+    <color name="dark_grey">#949494</color>
+    <color name="dark_blue">#395896</color>
+    <color name="preview_btn_blue">#0073A9</color>
+    <color name="progress_color">#BED62F</color>
+    <color name="register_blue">#0071a2</color>
+    <color name="orange">#F69322</color>
+    <color name="camp_red">#EC2028</color>
+
+    <!-- SN Menu Item Bg -->
+    <color name="menu_friends_blue">#4f87f6</color>
+    <color name="menu_find_friends_red">#f65248</color>
+    <color name="menu_create_page_blue">#4ab9f1</color>
+    <color name="menu_chat_yellow">#ebb807</color>
+    <color name="menu_create_group_red">#fc713a</color>
+    <color name="menu_settings_grey">#949597</color>
+    <color name="fb_label">#5F80C7</color>
+    <color name="app_bg">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="my_profile_bg">#EAEEF1</color>
+    <color name="my_profile_grey_color">#95969A</color>
+    <color name="smiley_orange">#FF6F31</color>
+
+    <!-- Multi Image Pick -->
+
+    <color name="black">#000000</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="menu_bg">#101F2D</color>
+    <color name="light_gray">#AA808080</color>
+    <color name="gray">#dddddd</color>
+    <color name="tab_bg">#142029</color>
+    <color name="bg_light_blue">#EBF5FF</color>
+    <color name="light_black">#CC000000</color>
+    <color name="light_black_AA">#AA000000</color>
+    <color name="light_black_">#33000000</color>
+    <color name="light_white_">#33FFFFFF</color>
+    <color name="dialog_bg">#f0f0f0</color>
+
+    <drawable name="light_black_">#33000000</drawable>
+
+    <color name="transperent">#8F000000</color>
+    <color name="tab_text">#939497</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+
+    <!-- TRAINER MATCHING -->
+
+    <color name="tm_app_bg">#ABABAB</color>
+    <color name="tm_trainer_adres_color">#8F9192</color>
+    <color name="tm_trainer_count_color">#6B7478</color>
+
+    <!-- User Details -->
+    <color name="tm_grey">#939597</color>
+    <color name="tm_sky_blue">#54c2f2</color>
+    <color name="tm_transpernt_blue">#0071a2</color>
+    <color name="tm_light_green">#bed42f</color>
+    <color name="tm_white">#FFF</color>
+    <color name="tm_white_smoke">#f5f5f5</color>
+    <color name="leave_group_bg">#EAEEEF</color>
+
+    <!-- TR THANK YOU -->
+    <color name="similey_color">#FF641F</color>
+    <!-- CROWD FUNDING -->
+    <color name="new_campaign_txt_bg">#F3F5F7</color>
+    <color name="crowdfund_label">#939598</color>
+
+    <!-- MENU -->
+    <color name="right_arrow">#D1D5D8</color>
+    <color name="light_dark_grey">#D6D6D6</color>
+    <color name="light_grey">#E7E7E7</color>
+
+    <!-- EDIT PROFILE -->
+    <color name="edit_profile_category_bg">#F4F4F4</color>
+    
+    
+    <color  name="btnBlue">#0071A2</color>
+     <color  name="lblRight">#CC3300</color>
+    
+
+</resources>
